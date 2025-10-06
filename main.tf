@@ -8,7 +8,6 @@ module "ec2_instance" {
   vpc_security_group_ids      = [aws_security_group.main.id]
   associate_public_ip_address = true
 
-
   tags = {
     Terraform   = "true"
     Environment = "dev"
